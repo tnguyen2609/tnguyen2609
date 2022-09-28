@@ -74,7 +74,7 @@ void UI(int player)
 }
 
 /***********************************************************************
-    void winner(int win);
+    void printWinner(int win);
     This function will print to the screen who is the winner.
     Take input as an integer for which player wins. 
 **************************************************************************/
@@ -91,12 +91,11 @@ void printWinner(int win)
 }
 
 /***********************************************************************
-    int check(char table[], int num, it winner) will check for winner of TIC-TAC-TOE. 
+    int check() will check for winner of TIC-TAC-TOE. 
     It will check to see if three marks in a row (horizontal, vertical, and diagonal).
-    Funtion will return the winner.
-    It will take the array of table and number of elements as inputs. 
-    temp = 1 -> done
-    temp = 0 -> 0
+    Funtion will return result of winner found or not. 
+    temp = 1 -> Done. Winner found.
+    temp = 0 -> No winner found yet.
 **************************************************************************/
 int check()
 {
